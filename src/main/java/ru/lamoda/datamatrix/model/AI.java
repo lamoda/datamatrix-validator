@@ -21,6 +21,9 @@ public enum AI implements AIAction {
 
         @Override
         public int getSize(TradeGroup type) {
+            if (type == NICOTINE) {
+                return getCode().length() + 12;
+            }
             return getCode().length() + 14;
         }
     },
@@ -40,7 +43,10 @@ public enum AI implements AIAction {
                 case MILK:
                     return getCode().length() + 6;
                 case BEER:
+                case NICOTINE:
                     return getCode().length() + 7;
+                case CAMERAS:
+                    return getCode().length() + 20;
                 default:
                     return getCode().length() + 13;
             }
@@ -51,7 +57,7 @@ public enum AI implements AIAction {
         @Override
         public ValidationResult getValidationResult(TradeGroup type, String value) {
             return notBlank
-                    .and(checkTradeGroup(type, SHOES, LP, PERFUMERY))
+                    .and(checkTradeGroup(type, ANTISEPTIC, BICYCLES, CAMERAS, CLOTHES, DS, LP, MP, PERFUMERY, SHOES, TIRES))
                     .and(fixedSize(getSize(type)))
                     .and(checkRegex(GS1_ISO_SUBSET_FOR_CONTROL_NUMBER))
                     .test(value);
@@ -60,9 +66,16 @@ public enum AI implements AIAction {
         @Override
         public int getSize(TradeGroup type) {
             switch (type) {
-                case SHOES:
+                case ANTISEPTIC:
+                case BICYCLES:
+                case CAMERAS:
+                case CLOTHES:
+                case DS:
                 case LP:
+                case MP:
                 case PERFUMERY:
+                case SHOES:
+                case TIRES:
                     return getCode().length() + 4;
                 default:
                     return 0;
@@ -74,7 +87,7 @@ public enum AI implements AIAction {
         @Override
         public ValidationResult getValidationResult(TradeGroup type, String value) {
             return notBlank
-                    .and(checkTradeGroup(type, BEER, WATER, MILK))
+                    .and(checkTradeGroup(type, ANTISEPTIC, BEER, DS, WATER, MILK))
                     .and(fixedSize(getSize(type)))
                     .and(checkRegex(GS1_ISO_SUBSET_FOR_CONTROL_NUMBER))
                     .test(value);
@@ -83,9 +96,11 @@ public enum AI implements AIAction {
         @Override
         public int getSize(TradeGroup type) {
             switch (type) {
+                case ANTISEPTIC:
+                case BEER:
+                case DS:
                 case MILK:
                 case WATER:
-                case BEER:
                     return getCode().length() + 4;
                 default:
                     return 0;
@@ -97,7 +112,7 @@ public enum AI implements AIAction {
         @Override
         public ValidationResult getValidationResult(TradeGroup type, String value) {
             return notBlank
-                    .and(checkTradeGroup(type, PERFUMERY, SHOES, LP))
+                    .and(checkTradeGroup(type, SHOES, ANTISEPTIC, BICYCLES, CAMERAS, CLOTHES, DS, LP, MP, PERFUMERY, TIRES))
                     .and(fixedSize(getSize(type)))
                     .and(checkRegex(GS1_ISO_SUBSET_FOR_CRYPTO_TAIL))
                     .test(value);
@@ -108,8 +123,15 @@ public enum AI implements AIAction {
             switch (type) {
                 case SHOES:
                     return getCode().length() + 88;
-                case PERFUMERY:
+                case ANTISEPTIC:
+                case BICYCLES:
+                case CAMERAS:
+                case CLOTHES:
+                case DS:
                 case LP:
+                case MP:
+                case PERFUMERY:
+                case TIRES:
                     return getCode().length() + 44;
                 default:
                     return 0;
@@ -149,6 +171,25 @@ public enum AI implements AIAction {
         @Override
         public int getSize(TradeGroup type) {
             if (type == MILK) {
+                return getCode().length() + 6;
+            }
+            return 0;
+        }
+    },
+
+    AI_8005("8005", false) {
+        @Override
+        public ValidationResult getValidationResult(TradeGroup type, String value) {
+            return notBlank
+                    .and(checkTradeGroup(type, NICOTINE))
+                    .and(fixedSize(getSize(type)))
+                    .and(onlyNumbers())
+                    .test(value);
+        }
+
+        @Override
+        public int getSize(TradeGroup type) {
+            if (type == NICOTINE) {
                 return getCode().length() + 6;
             }
             return 0;

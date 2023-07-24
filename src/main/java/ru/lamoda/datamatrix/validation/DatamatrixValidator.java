@@ -103,19 +103,23 @@ public class DatamatrixValidator {
             List<AI> ais = Arrays.stream(AI.values())
                     .filter(ai -> part.startsWith(ai.getCode()))
                     .collect(Collectors.toList());
-            if (ais.size() == 0) {
-                throw new DatamatrixCodeIncorrectException("unknown AI");
-            }
-            for (AI identifier : ais) {
-                if (!identifier.isFixedSize()) {
-                    identifier.validateThrow(type, part);
-                    result.add(identifier);
-                } else {
-                    String begin = part.substring(0, identifier.getSize(type));
-                    identifier.validateThrow(type, begin);
-                    result.add(identifier);
-                    result.addAll(splitToAis(part.substring(identifier.getSize(type)), type));
+            if (!ais.isEmpty()) {
+                for (AI identifier : ais) {
+                    if (!identifier.isFixedSize()) {
+                        identifier.validateThrow(type, part);
+                        result.add(identifier);
+                    } else {
+                        String begin = part.substring(0, identifier.getSize(type));
+                        identifier.validateThrow(type, begin);
+                        result.add(identifier);
+                        result.addAll(splitToAis(part.substring(identifier.getSize(type)), type));
+                    }
                 }
+            } else if (datamatrixCode.length() == 29 || datamatrixCode.length() == 15) {
+                //for short NICOTINE
+                return result;
+            } else {
+                throw new DatamatrixCodeIncorrectException("unknown AI");
             }
         }
         return result;
