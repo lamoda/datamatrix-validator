@@ -8,12 +8,23 @@
 
 Перечень поддерживаемых товарных групп:
 
+### version 1.0
 * Обувь ([ППР №860 от 05.07.2019](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/860.pdf))
 * Товары лёгкой промышленности ([ППР №1956 от 31.12.2019](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/1956.pdf))
 * Духи и туалетная вода ([ППР №1957 от 31.12.2019](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_31_12_2019_N_1957_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_20_11.pdf))
 * Молочная продукция ([ППР №2099 от 15.12.2020](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_15_12_2020_N_2099_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_22_04.pdf))
 * Пиво и слабоалкогольные напитки ([ППР №2173 от 30.11.2022](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0%20%E2%84%962173.pdf))
 * Упакованная вода ([ППР №841 от 31.05.2021](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_31_05_2021_N_841_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_26_03.pdf))
+
+### version 1.1
+* Одежда ([ППР № 1956 от 31.12.2019г.](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_31_05_2021_N_841_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_26_03.pdf))
+* Шины ([ППР № 1958 от 31.12.2019г.](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_31_05_2021_N_841_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_26_03.pdf))
+* Велосипеды ([Метод рекомен от 05.11.2019г.](https://честныйзнак.рф/upload/iblock/a1e/Metodicheskie_rekomendatsii_dlya_TG_Velosipedy.pdf))
+* Мед.изделия ([Метод.рекомен от 27.11.2019г.](https://честныйзнак.рф/upload/iblock/4f6/Методические%20рекомендации.pdf))
+* Фотоаппараты ([ППР № 1953 от 21.12.2019г.](https://xn--80ajghhoc2aj1c8b.xn--p1ai/upload/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4_%D0%BE%D1%82_31_05_2021_N_841_%D1%80%D0%B5%D0%B4_%D0%BE%D1%82_26_03.pdf))
+* БАД ([Проект ППР](https://regulation.gov.ru/projects#npa=130322))
+* Антисептики ([Проект ППР](https://regulation.gov.ru/projects#npa=130584))
+* Табак,АТП*, НСП* ([ППР № 224 от 28.02.2019г.](https://base.garant.ru/72189916/))
 
 # Даматарикс код можно валидировать
 

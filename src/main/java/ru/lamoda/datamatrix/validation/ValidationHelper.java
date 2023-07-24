@@ -31,7 +31,8 @@ public class ValidationHelper {
     }
 
     public static Validation<String> containsGS() {
-        return SimpleValidation.from((s) -> contains(s, GS), "must contain <GS>");
+        return SimpleValidation.from((s) -> contains(s, GS) || s.length() == 29,
+                "must contain <GS> or code length must be 29 characters");
     }
 
     public static Validation<String> onlyNumbers() {
